@@ -2,3 +2,4 @@
 # Majd egyszer nekiállásing
 # Alma
 # Miguel
+# Emanuel
