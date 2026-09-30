@@ -6,4 +6,4 @@
 
 # Ideas
 
-### Egy alap "template"t csinálunk, aztán bemutatjuk az ezzel megalkotható lehetőségeket ----> restaurant managament software
+### Egy alap "template"t csinálunk, aztán bemutatjuk az ezzel megalkotható lehetőségeket ----> restaurant managament software KICSIBEN 
