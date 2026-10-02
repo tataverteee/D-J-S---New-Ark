@@ -10,4 +10,4 @@
 
 ### freelancing weboldal
 
-### raktár nyilvántartó rendszer + termék helye (generált QR kód) *****
+### raktár nyilvántartó rendszer + termék helye (generált QR + barkód) *****
