@@ -1,0 +1,37 @@
+{
+  "name": "vue-project",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "rc"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.8",
+    "vite": "^8.2.2",
+    "vite-plugin-vue-devtools": "^8.2.1"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.12.0"
+  },
+  "overrides": {
+    "vue": "rc",
+    "@vue/compiler-core": "rc",
+    "@vue/compiler-dom": "rc",
+    "@vue/compiler-sfc": "rc",
+    "@vue/compiler-ssr": "rc",
+    "@vue/compiler-vapor": "rc",
+    "@vue/reactivity": "rc",
+    "@vue/runtime-core": "rc",
+    "@vue/runtime-dom": "rc",
+    "@vue/runtime-vapor": "rc",
+    "@vue/server-renderer": "rc",
+    "@vue/shared": "rc",
+    "@vue/compat": "rc"
+  }
+}
