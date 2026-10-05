@@ -1,0 +1,457 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+a {
+  color: #1a0dab;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #660099;
+}
+
+a:hover {
+  color: #d14836;
+}
+
+.kontener {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+/*
+1. fejlec resze (felső sáv, márka, navigáció, felhasználói dolgok)
+*/
+header {
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 12px;
+  border-bottom: 3px solid #000000;
+}
+
+.felso-fejlec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px;
+  flex-wrap: wrap;
+}
+
+.oldal-marka {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.oldal-marka-ikon {
+  background-color: #ffffff;
+  color: #222222;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.marka-szoveg {
+  color: #e9ecef;
+  font-family:'Times New Roman', Times, serif
+}
+
+.navigation-kategoriak {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.navigation-kategoriak li a {
+  color: #dddddd;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navigation-kategoriak li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.fejlec-felhasznaloi-dolog {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #cccccc;
+  font-size: 11px;
+}
+
+.fejlec-felhasznaloi-dolog a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fejlec-felhasznaloi-dolog a:hover {
+  text-decoration: underline;
+}
+
+/*
+2. fejlec resze (weboldal navigacios sav, menupontok)
+*/
+.weboldal-navigacio {
+  background-color: #333333;
+  border-bottom: 1px solid #444444;
+  text-align: center;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.weboldal-navigacio ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.weboldal-navigacio a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.al-navigacio a:hover {
+  color: #ffffff;
+}
+
+/* -------------------------------------------------------------------------
+   3. keresés-tárhelyek rész
+   ------------------------------------------------------------------------- */
+.kiemelt-banner {
+  padding: 30px 12px 25px 12px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.kiemelt-tartalom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  max-width: 950px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo-doboz {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.archive-cim-szoveg {
+  text-align: left;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.archive-cim-szoveg h1 {
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  line-height: 1.1;
+}
+
+.archive-cim-szoveg h3 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.kereses-resz {
+  flex: 1;
+  min-width: 320px;
+}
+
+.kereso-doboz-dolog {
+  display: flex;
+  border: 2px solid #8ab4f8;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+}
+
+.kereso-valaszto {
+  background-color: #f8f8f8;
+  border: none;
+  border-right: 1px solid #cccccc;
+  padding: 8px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.kereso-doboz-bemenet {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.kereso-doboz-gomb {
+  background-color: #f2f2f2;
+  border: none;
+  border-left: 1px solid #cccccc;
+  padding: 0 16px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333333;
+  font-size: 12px;
+}
+
+.kereso-doboz-gomb:hover {
+  background-color: #e5e5e5;
+}
+
+/* -------------------------------------------------------------------------
+   4. három oszlop szekció (TÁRHELYEK, GYORSKERESÉS, STATISZTIKA)
+   ------------------------------------------------------------------------- */
+.eszkoz-racs-resz {
+  padding: 30px 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.eszkoz-racs {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  gap: 28px;
+}
+
+.oszlop-fejlec {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.oszlop-fejlec h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  line-height: 1.2;
+}
+
+.oszlop-lista {
+  list-style-type: square;
+  padding-left: 18px;
+  margin-bottom: 12px;
+}
+
+.oszlop-lista li {
+  margin-bottom: 6px;
+}
+
+.oszlop-szoveg {
+  font-size: 12px;
+  color: #444444;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.urlap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bemenet {
+  border: 1px solid #a6a6a6;
+  padding: 6px 8px;
+  font-size: 12px;
+  border-radius: 2px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gomb {
+  background-color: #e1e1e1;
+  border: 1px solid #adadad;
+  color: #333333;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+  border-radius: 2px;
+}
+
+.gomb:hover {
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+
+.statisztika-tablazat {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.statisztika-tablazat td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.statisztika-tablazat tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.statisztika-cimke {
+  font-weight: bold;
+  color: #555555;
+}
+
+.statisztika-ertek {
+  text-align: right;
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------
+   5. raktári nyilvántartások dolog
+   ------------------------------------------------------------------------- */
+.jegyzek-resz {
+  padding: 30px 0;
+  background-color: #ffffff;
+}
+
+.szekcio-cim {
+  font-size: 16px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 12px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #333333;
+}
+
+.leltar-tablazat {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  border: 1px solid #cccccc;
+}
+
+.leltar-tablazat th {
+  background-color: #f2f2f2;
+  color: #333333;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+}
+
+.leltar-tablazat td {
+  padding: 7px 10px;
+  border: 1px solid #e0e0e0;
+}
+
+.leltar-tablazat tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
+.leltar-tablazat tr:hover {
+  background-color: #f0f4f8;
+}
+
+.statusz-jelzo {
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.statusz-raktaron { color: #007a00; }
+.statusz-kiadva { color: #cc0000; }
+.statusz-lefoglalva { color: #cc6600; }
+
+.muvelet-gomb {
+  padding: 4px 8px;
+  font-size: 11px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 4px;
+  font-weight: bold;
+}
+
+.gomb-szerkesztes {
+  background-color: #e9ecef;
+  color: #212529;
+  border-color: #ced4da;
+}
+
+.gomb-szerkesztes:hover {
+  background-color: #dae0e5;
+}
+
+.gomb-torles {
+  background-color: #f8d7da;
+  color: #842029;
+  border-color: #f5c2c7;
+}
+
+.gomb-torles:hover {
+  background-color: #f1aeb5;
+}
+
+footer {
+  border-top: 2px solid #333333;
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  margin-top: 20px;
+  font-size: 11px;
+  color: #666666;
+  text-align: center;
+}
+
+.lablec-linkek {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.lablec-linkek a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.lablec-linkek a:hover {
+  text-decoration: underline;
+}
