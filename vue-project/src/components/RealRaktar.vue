@@ -26,8 +26,9 @@ async function openBox() {
         <span class="user-badge manager">Kevin Papp (MANAGER)</span> <!--(template)-->
         <span>|</span>
         <button type="button" id="regisztracio-gomb" @click="openBox">REGISZTRÁCIÓ</button>
+        <button type="button" id="regisztracio-gomb" @click="regisztracio">REGISZTRÁCIÓ</button>
         <span>|</span>
-        <button type="button" id="bejelentkezes-gomb">BEJELENTKEZÉS</button>
+        <button type="button" id="bejelentkezes-gomb" @click="bejelentkezes">BEJELENTKEZÉS</button>
         <span>|</span>
         <a href="#">BEÁLLÍTÁSOK</a>
         
@@ -202,3 +203,13 @@ async function openBox() {
     </div>
   </footer>
 </template>
+
+<script setup>
+function regisztracio() {
+  // TODO: Implement registration.
+}
+
+function bejelentkezes() {
+  // TODO: Implement login.
+}
+</script>
