@@ -28,7 +28,7 @@ async function openBox() {
         <button type="button" id="regisztracio-gomb" @click="openBox">REGISZTRÁCIÓ</button>
         
         <span>|</span>
-        <button type="button" id="bejelentkezes-gomb" @click="bejelentkezes">BEJELENTKEZÉS</button>
+        <button type="button" id="bejelentkezes-gomb">BEJELENTKEZÉS</button>
         <span>|</span>
         <a href="#">BEÁLLÍTÁSOK</a>
         
