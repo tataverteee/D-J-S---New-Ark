@@ -204,12 +204,3 @@ async function openBox() {
   </footer>
 </template>
 
-<script setup>
-function regisztracio() {
-  // TODO: Implement registration.
-}
-
-function bejelentkezes() {
-  // TODO: Implement login.
-}
-</script>
