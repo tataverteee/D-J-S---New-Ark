@@ -17,9 +17,9 @@
       <div class="fejlec-felhasznaloi-dolog">
         <span class="user-badge manager">Kevin Papp (MANAGER)</span> <!--(template)-->
         <span>|</span>
-        <a href="#">REGISZTRÁCIÓ</a>
+        <button type="button" id="regisztracio-gomb">REGISZTRÁCIÓ</button>
         <span>|</span>
-        <a href="#">BEJELENTKEZÉS</a>
+        <button type="button" id="bejelentkezes-gomb">BEJELENTKEZÉS</button>
         <span>|</span>
         <a href="#">BEÁLLÍTÁSOK</a>
         
